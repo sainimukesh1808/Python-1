@@ -28,4 +28,17 @@ for i in list1:
             final =1 
 if final == 0:
     print("\nFalse")
-    
+
+
+#############################Mk#########
+flag = False
+for x in range(0,(len(l)-2)):
+    for y in range(x+1,(len(l)-1)):
+        for z in range(x+2,len(l)):
+            if(l[x]==0 and l[y]==0 and l[z] == 7):
+                flag = True
+                
+if(flag):
+    print("007 is present")
+else:
+    print("007 is not present")
